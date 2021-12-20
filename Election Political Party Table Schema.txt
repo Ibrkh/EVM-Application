@@ -1,0 +1,6 @@
+CREATE TABLE Political_Party (
+	Political_Name VARCHAR(20) NOT NULL,
+	Chairman_Name VARCHAR(20) NOT NULL,
+	Vote_Frequency INT(200) NOT NULL,
+	CONSTRAINT PoliticalParty_PK PRIMARY KEY(Political_Name)
+);

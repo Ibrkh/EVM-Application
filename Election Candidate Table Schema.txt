@@ -1,0 +1,10 @@
+CREATE TABLE Election_Candidate (
+	CNIC VARCHAR(20) NOT NULL,
+	First_Name VARCHAR(20) NOT NULL,
+	Last_Name VARCHAR(20),
+	Political_PartyName VARCHAR(20),
+	Political_Position VARCHAR(50) NOT NULL,
+	Election_Constituency VARCHAR(30) NOT NULL,
+	Vote_Frequency INT(200) NOT NULL,
+	CONSTRAINT Candidate_PK PRIMARY KEY(CNIC)
+);

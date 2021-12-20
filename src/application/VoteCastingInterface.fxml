@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VoteCastingInterfaceController">
+   <top>
+      <Label text="Vote Casting Interface" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="238.0" layoutY="14.0" text="Election Candidate Lists" />
+            <GridPane fx:id="Box" gridLinesVisible="true" layoutX="186.0" layoutY="41.0" prefHeight="100.0" prefWidth="231.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <TextField fx:id="CNIC" layoutX="251.0" layoutY="173.0" promptText="Enter candidate CNIC" />
+            <TextField fx:id="CandidateName" layoutX="251.0" layoutY="210.0" promptText="Enter candidate Name" />
+            <Label layoutX="149.0" layoutY="214.0" text="Candidate Name" />
+            <Label layoutX="151.0" layoutY="177.0" text="Candidate CNIC" />
+            <Label layoutX="107.0" layoutY="249.0" text="Candidate Political Party" />
+            <TextField fx:id="PoliticalParty" layoutX="251.0" layoutY="245.0" promptText="Enter candidate Party Name" />
+            <TextField fx:id="ElectionConstituency" layoutX="251.0" layoutY="283.0" promptText="Enter candidate Constituency" />
+            <Label layoutX="109.0" layoutY="287.0" text="Candidate Constituency" />
+            <Button fx:id="VoteButton" layoutX="274.0" layoutY="323.0" mnemonicParsing="false" onAction="#VoteButtonFunction" text="Submit Vote" />
+            <Button fx:id="BackButton" layoutX="504.0" layoutY="323.0" mnemonicParsing="false" onAction="#BackButtonFunction" prefWidth="57.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

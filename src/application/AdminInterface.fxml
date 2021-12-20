@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminInterfaceController">
+   <top>
+      <Label text="Admin Interface" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="AdminDetailsButton" layoutX="257.0" layoutY="83.0" mnemonicParsing="false" onAction="#AdminDetailsButtonFunction" text="Admin Details" />
+            <Button fx:id="ElectionPartyButton" layoutX="241.0" layoutY="160.0" mnemonicParsing="false" onAction="#AddElectionPoliticalPartyButtonFunction" text="Add a Political Party" />
+            <Button fx:id="ElectionResultsButton" layoutX="236.0" layoutY="120.0" mnemonicParsing="false" onAction="#ElectionResultsButtonFunction" text="View Election Resullts" />
+            <Button fx:id="BackButton" layoutX="273.0" layoutY="269.0" mnemonicParsing="false" onAction="#BackButtonFunction" text="Logout" />
+            <Button fx:id="ElectionCandidateButton" layoutX="223.0" layoutY="196.0" mnemonicParsing="false" onAction="#AddElectionCandidateButtonFunction" text="Add an Election Candidate" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

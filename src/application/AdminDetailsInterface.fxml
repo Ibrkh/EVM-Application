@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminDetailsInterfaceController">
+   <top>
+      <Label text="Admin Interface" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <TextArea editable="false" layoutX="164.0" layoutY="58.0" prefHeight="64.0" prefWidth="180.0" text="Admin Name: Ibrahim Khan&#10;Admin Username: k190312&#10;Admin Password: ahmdibrkhn" />
+            <Label layoutX="207.0" layoutY="37.0" text="Admin Details">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="234.0" layoutY="135.0" mnemonicParsing="false" onAction="#BackButtonFunction" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

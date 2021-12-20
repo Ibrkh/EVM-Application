@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InstructionsManualController">
+   <top>
+      <Label text="Electronic Voting System" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TextArea editable="false" text="Welcome to the EVM system. An electoral system or voting system is a set of rules that determine how elections and referendums are conducted and how their results are determined. Political electoral systems are organized by the Department of Federal Governement - Election Commission of Pakistan&#10;&#10;Instructions: Electronic voting, a form of computer-mediated voting in which voters make their selections with the aid of a computer. The voter usually chooses with the aid of a screen display, although audio interfaces can be made available for voters with visual disabilities. To understand electronic voting, it is convenient to consider four basic steps in an election process: &#10;1. Ballot composition, in which voters make choices; ballot casting, in which voters submit their ballots.&#10;2. Ballot recording, in which a system records the submitted ballots; and tabulation, in which votes are counted. &#10;3. Ballot casting, recording, and tabulation are routinely done with computers even in voting systems that are not, strictly speaking, electronic. &#10;&#10;Mostly due to security and access concerns, most large-scale electronic voting is currently held in designated precincts using special-purpose machines. This type of voting mechanism is referred to as electronic-voting&#10;" wrapText="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="CancelButton" alignment="CENTER" layoutX="241.0" layoutY="2.0" mnemonicParsing="false" onAction="#cancelButtonFunction" text="Cancel" AnchorPane.bottomAnchor="0.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="ConitnueButton" alignment="CENTER" layoutX="306.0" layoutY="1.0" mnemonicParsing="false" onAction="#continueButtonFunction" text="Continue..">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
